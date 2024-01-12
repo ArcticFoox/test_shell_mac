@@ -6,6 +6,6 @@ echo $filePath
 
 commitMag=`cat $filePath | head -1`
 
-echo $commitMag:1
-echo $commitMag:2
-echo $commitMag:3
+echo ${commitMag:1}
+echo ${commitMag:2}
+echo ${commitMag:3}
