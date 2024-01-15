@@ -4,7 +4,7 @@ filePath=`git status -u -s | head -n 1`
 
 echo ${filePath:2}
 
-commitMag=`cat ${filePath:3} | head -1`
+commitMag=`cat ${filePath:2} | head -1`
 
 problemId=`${commitMag:2} | cut -d ' ' -f1`
 problemKind=`${commitMag:2} | cut -d ' ' -f2`
