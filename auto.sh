@@ -8,9 +8,9 @@ commitMag=`cat ${filePath:2} | head -1`
 
 echo $commitMag
 
-problemId=`${commitMag:2} | cut -d ' ' -f1`
-problemKind=`${commitMag:2} | cut -d ' ' -f2`
-problemURL=`${commitMag:2} | cut -d ' ' -f3`
+problemId=`cat ${commitMag:2} | cut -d ' ' -f1`
+problemKind=`cat ${commitMag:2} | cut -d ' ' -f2`
+problemURL=`cat ${commitMag:2} | cut -d ' ' -f3`
 
 echo $problemId
 echo $problemKind
