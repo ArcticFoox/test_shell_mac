@@ -16,5 +16,6 @@ echo $problemId
 echo $problemKind
 echo $problemURL
 
-# git add ${filePath:3}
-# git commit 
+git add ${filePath:2}
+git commit -m "$problemId" -m "$problemKind\n$problemURL"
+git push
